@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Book Your Free MedPilot Consultation</title>
+<meta name="description" content="Book a free consultation with MedPilot. Honest eligibility advice, university recommendations and clear pricing, with no obligation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="MedPilot home">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+  <circle cx="15" cy="15" r="14" stroke="#0F3D30" stroke-width="2"/>
+  <path d="M15 6 L18.5 16.5 L15 14.5 L11.5 16.5 Z" fill="#00966E"/>
+  <path d="M15 24 v-6" stroke="#0F3D30" stroke-width="2" stroke-linecap="round"/>
+</svg>
+      MedPilot
+    </a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programmes.html">Programmes</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li><a class="btn btn-primary nav-cta" href="contact.html">Book a free consultation</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <img class="bg" src="images/books.jpg" alt="" width="1280" height="1919">
+    <div class="veil" aria-hidden="true"></div>
+    <div class="wrap">
+      <h1>Book your free consultation</h1>
+      <p class="lede">Tell us a little about yourself and we'll come back within one working day with honest next steps.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>A conversation, not a sales pitch</h2>
+        <p class="lede" style="margin-bottom:8px">Your consultation covers your eligibility, realistic university options and what each package would cost. It's free, and there's no obligation to continue.</p>
+        <div class="contact-info">
+          <div class="row">
+            <div class="ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="4" width="16" height="13" rx="2" stroke="#0F3D30" stroke-width="1.7"/><path d="M2.5 5.5L10 11l7.5-5.5" stroke="#00966E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><p class="k">Email</p><p class="v">hello@medpilot.eu</p></div>
+          </div>
+          <div class="row">
+            <div class="ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="#0F3D30" stroke-width="1.7"/><path d="M10 5.5V10l3 2" stroke="#00966E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><p class="k">Response time</p><p class="v">Within one working day</p></div>
+          </div>
+          <div class="row">
+            <div class="ico"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 18s6-4.6 6-9.5A6 6 0 004 8.5C4 13.4 10 18 10 18z" stroke="#0F3D30" stroke-width="1.7" stroke-linejoin="round"/><circle cx="10" cy="8.5" r="2.2" stroke="#00966E" stroke-width="1.7"/></svg></div>
+            <div><p class="k">Where we operate</p><p class="v">UK, Ireland and Canada, for study in Bulgaria</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <div class="field-row">
+          <div class="field">
+            <label for="f-name">Full name</label>
+            <input id="f-name" type="text" name="name" autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" type="email" name="email" autocomplete="email" placeholder="you@example.com">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-phone">Phone (optional)</label>
+            <input id="f-phone" type="tel" name="phone" autocomplete="tel" placeholder="+44 ...">
+          </div>
+          <div class="field">
+            <label for="f-prog">Programme of interest</label>
+            <select id="f-prog" name="programme">
+              <option>Medicine</option>
+              <option>Dentistry</option>
+              <option>Pharmacy</option>
+              <option>Veterinary Medicine</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-msg">Tell us about your situation</label>
+          <textarea id="f-msg" name="message" placeholder="Your qualifications, when you'd like to start, and anything you're unsure about."></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="sendEnquiry()">Send enquiry <svg class="plane" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <p class="form-note">Sending opens your email app with the details filled in. We never share your information with anyone else.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <h2>Before you ask</h2>
+      <div class="faq">
+        <details class="reveal">
+          <summary>Is the first consultation really free?</summary>
+          <p>Yes. The initial consultation, career guidance, eligibility assessment and university recommendations are always free, whether or not you go on to use a paid package.</p>
+        </details>
+        <details class="reveal">
+          <summary>Are the degrees recognised outside Bulgaria?</summary>
+          <p>The universities we work with are accredited, and their English-taught degrees are recognised across the European Union. If you plan to practise in a specific country, we'll talk you through that country's registration process during your consultation.</p>
+        </details>
+        <details class="reveal">
+          <summary>How much does it cost to study Medicine in Bulgaria?</summary>
+          <p>Tuition for English-taught Medicine is typically 8,000 to 10,000 euros per academic year, usually paid in two instalments. Living costs are low by European standards; a modern city-centre apartment in Sofia rents for around 350 euros a month, and smaller cities cost less. We break down the full cost for your chosen university during your free consultation.</p>
+        </details>
+        <details class="reveal">
+          <summary>What are the entrance exams like?</summary>
+          <p>Most universities assess biology and chemistry, and some also ask for an English test. Formats vary by university, and our Standard and Premium packages include structured guidance and registration support so you arrive prepared.</p>
+        </details>
+        <details class="reveal">
+          <summary>Do I need an agency to apply at all?</summary>
+          <p>Honestly, no. You can apply to Bulgarian universities directly, and if you're confident handling document legalisation, translations, exam registration, visa appointments and finding housing in a country you've never lived in, we'd genuinely encourage it. What you pay MedPilot for is getting every step right the first time, one accountable person managing your case, and support that continues after you land. Our pricing is published upfront so you can weigh that for yourself.</p>
+        </details>
+        <details class="reveal">
+          <summary>What support do I get after I arrive?</summary>
+          <p>Depending on your package: airport pickup, accommodation help, bank account and SIM card setup, residence permit support and local orientation. Every student gets access to our online community, student ambassadors and emergency support line throughout their degree.</p>
+        </details>
+        <details class="reveal">
+          <summary>Can my parents be involved in the process?</summary>
+          <p>Absolutely. We regularly hold consultations with parents and school career advisers so the whole family understands the costs, the timeline and what to expect.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+  <circle cx="15" cy="15" r="14" stroke="#DCEDE4" stroke-width="2"/>
+  <path d="M15 6 L18.5 16.5 L15 14.5 L11.5 16.5 Z" fill="#00966E"/>
+  <path d="M15 24 v-6" stroke="#DCEDE4" stroke-width="2" stroke-linecap="round"/>
+</svg>
+          MedPilot
+        </a>
+        <p>Your gateway to studying medicine in Europe. Honest advice and genuine support, from first enquiry to graduation.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About MedPilot</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="packages.html">Packages</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="contact.html">Book a consultation</a></li>
+          <li><a href="packages.html#journey">Your journey</a></li>
+          <li><a href="contact.html#faq">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@medpilot.eu">hello@medpilot.eu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 MedPilot. All rights reserved.</span>
+      <span>Founded by Kirstie Mensah and Sharon Egeonu</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(btn){
+  const links = document.getElementById('navLinks');
+  const open = links.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+}
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+<script>
+function sendEnquiry(){
+  const v = id => document.getElementById(id).value.trim();
+  const name = v('f-name'), email = v('f-email'), phone = v('f-phone');
+  const prog = document.getElementById('f-prog').value, msg = v('f-msg');
+  const body = encodeURIComponent(
+    'Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone +
+    '\nProgramme: ' + prog + '\n\n' + msg
+  );
+  const subject = encodeURIComponent('Free consultation enquiry - ' + (name || 'New student'));
+  window.location.href = 'mailto:hello@medpilot.eu?subject=' + subject + '&body=' + body;
+}
+</script>
+
+</body>
+</html>

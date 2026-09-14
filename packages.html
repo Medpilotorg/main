@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Packages and Pricing | MedPilot</title>
+<meta name="description" content="Three transparent support packages, from application essentials to full door-to-door support, plus a clear ten-step student journey.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap" aria-label="Main">
+    <a class="logo" href="index.html" aria-label="MedPilot home">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+  <circle cx="15" cy="15" r="14" stroke="#0F3D30" stroke-width="2"/>
+  <path d="M15 6 L18.5 16.5 L15 14.5 L11.5 16.5 Z" fill="#00966E"/>
+  <path d="M15 24 v-6" stroke="#0F3D30" stroke-width="2" stroke-linecap="round"/>
+</svg>
+      MedPilot
+    </a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="programmes.html">Programmes</a></li>
+      <li><a href="packages.html" aria-current="page">Packages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="btn btn-primary nav-cta" href="contact.html">Book a free consultation</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <img class="bg" src="images/flasks.jpg" alt="" width="1280" height="1024">
+    <div class="veil" aria-hidden="true"></div>
+    <div class="wrap">
+      <h1>Choose your class of support</h1>
+      <p class="lede">Three packages, one promise: transparent pricing with no hidden fees, ever.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="fares" style="margin-top:0">
+        <div class="fare reveal">
+          <div class="fare-top">
+            <span class="fare-class">Economy</span>
+            <h3>Basic</h3>
+            <p class="fare-sub">For confident applicants who want the essentials handled properly.</p>
+          </div>
+          <div class="fare-body">
+            <ul>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>University application</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Document checking</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Admission support</li>
+            </ul>
+            <a class="btn btn-ghost" href="contact.html">Enquire about Basic</a>
+          </div>
+        </div>
+
+        <div class="fare fare-featured reveal">
+          <span class="fare-badge">Most popular</span>
+          <div class="fare-top">
+            <span class="fare-class">Premium Economy</span>
+            <h3>Standard</h3>
+            <p class="fare-sub">Everything in Basic, plus the hurdles most students worry about.</p>
+          </div>
+          <div class="fare-body">
+            <ul>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Basic</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Entrance exam guidance</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Visa support</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Accommodation assistance</li>
+            </ul>
+            <a class="btn btn-primary" href="contact.html">Enquire about Standard</a>
+          </div>
+        </div>
+
+        <div class="fare reveal">
+          <div class="fare-top">
+            <span class="fare-class">Business</span>
+            <h3>Premium</h3>
+            <p class="fare-sub">The full journey, from your front door to your first year of study.</p>
+          </div>
+          <div class="fare-body">
+            <ul>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Standard</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Airport pickup</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Bank account and SIM card setup</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Residence permit support</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Local orientation</li>
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M2.5 8l3 3 7-7" stroke="#00966E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>First-year student mentoring</li>
+            </ul>
+            <a class="btn btn-ghost" href="contact.html">Enquire about Premium</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fare-free reveal">
+        <strong>Always free</strong>
+        <span>Initial consultation</span>
+        <span>Career guidance</span>
+        <span>Eligibility assessment</span>
+        <span>University recommendations</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="journey" style="padding-top:0">
+    <div class="wrap">
+      <div class="journey-head">
+        <h2>Your journey, in ten legs</h2>
+        <p class="lede">Every student follows a clear route. You always know exactly where you are and what comes next.</p>
+      </div>
+      <div class="journey-cols">
+        <ol class="route">
+          <li class="leg reveal"><div class="leg-marker">01</div><div class="leg-body"><span class="leg-tag">Departure</span><h3>Free consultation</h3><p>Tell us about your grades, goals and budget. We give you an honest picture of your options.</p></div></li>
+          <li class="leg reveal"><div class="leg-marker">02</div><div class="leg-body"><span class="leg-tag">Check-in</span><h3>Eligibility check</h3><p>We assess your qualifications against each university's entry requirements.</p></div></li>
+          <li class="leg reveal"><div class="leg-marker">03</div><div class="leg-body"><span class="leg-tag">Route selection</span><h3>Choose your university</h3><p>Compare accredited medical, dental, pharmacy and veterinary schools with our guidance.</p></div></li>
+          <li class="leg reveal"><div class="leg-marker">04</div><div class="leg-body"><span class="leg-tag">Documents</span><h3>Prepare and submit documents</h3><p>We check, translate and legalise everything so nothing delays your application.</p></div></li>
+          <li class="leg reveal"><div class="leg-marker">05</div><div class="leg-body"><span class="leg-tag">Application</span><h3>Application submitted</h3><p>Your case manager files your application and tracks it with the university directly.</p></div></li>
+        </ol>
+        <ol class="route" start="6">
+          <li class="leg reveal"><div class="leg-marker">06</div><div class="leg-body"><span class="leg-tag">Exam</span><h3>Entrance exam</h3><p>Guidance and preparation support for your biology and chemistry entrance exams.</p></div></li>
+          <li class="leg reveal"><div class="leg-marker">07</div><div class="leg-body"><span class="leg-tag">Cleared for boarding</span><h3>Offer letter</h3><p>Your official acceptance arrives. We talk you through enrolment and fees.</p></div></li>
+          <li class="leg reveal"><div class="leg-marker">08</div><div class="leg-body"><span class="leg-tag">Visa</span><h3>Travel visa</h3><p>Full support with your D visa application, appointments and paperwork.</p></div></li>
+          <li class="leg reveal"><div class="leg-marker">09</div><div class="leg-body"><span class="leg-tag">Arrival</span><h3>Arrival support</h3><p>Airport pickup, accommodation, bank account, SIM card and local orientation.</p></div></li>
+          <li class="leg reveal"><div class="leg-marker">10</div><div class="leg-body"><span class="leg-tag">Cruising altitude</span><h3>Ongoing support</h3><p>Residence permit help, mentoring and welfare support throughout your degree.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;padding-bottom:0">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Not sure which package fits?</h2>
+        <p>Start with the free consultation. We'll recommend the level of support that genuinely matches your situation, and nothing more.</p>
+        <a class="btn btn-primary" href="contact.html">Book your free consultation <svg class="plane" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1 8h13M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+  <circle cx="15" cy="15" r="14" stroke="#DCEDE4" stroke-width="2"/>
+  <path d="M15 6 L18.5 16.5 L15 14.5 L11.5 16.5 Z" fill="#00966E"/>
+  <path d="M15 24 v-6" stroke="#DCEDE4" stroke-width="2" stroke-linecap="round"/>
+</svg>
+          MedPilot
+        </a>
+        <p>Your gateway to studying medicine in Europe. Honest advice and genuine support, from first enquiry to graduation.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About MedPilot</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="packages.html">Packages</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="contact.html">Book a consultation</a></li>
+          <li><a href="packages.html#journey">Your journey</a></li>
+          <li><a href="contact.html#faq">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@medpilot.eu">hello@medpilot.eu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 MedPilot. All rights reserved.</span>
+      <span>Founded by Kirstie Mensah and Sharon Egeonu</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(btn){
+  const links = document.getElementById('navLinks');
+  const open = links.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+}
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
