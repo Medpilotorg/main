@@ -1,0 +1,8 @@
+{
+  "name": "MedPilot",
+  "short_name": "MedPilot",
+  "icons": [{ "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }],
+  "theme_color": "#0F3D30",
+  "background_color": "#F7F8F5",
+  "display": "browser"
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://medpilot.org.uk/sitemap.xml
