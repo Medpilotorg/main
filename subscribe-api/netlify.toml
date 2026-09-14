@@ -1,0 +1,4 @@
+# Standalone Netlify project that only hosts the newsletter signup function.
+# The website itself is served by GitHub Pages from the repository root.
+[build]
+  publish = "public"

@@ -296,6 +296,21 @@
 
 <footer>
   <div class="wrap">
+    <div class="news">
+      <div>
+        <h4>Get admissions updates</h4>
+        <p>Deadlines, entrance exam dates and tips for studying medicine in Europe. No spam, unsubscribe any time.</p>
+      </div>
+      <form class="news-form" id="newsForm" novalidate>
+        <div class="news-row">
+          <label for="news-email" class="news-hp">Email address</label>
+          <input id="news-email" type="email" name="email" autocomplete="email" placeholder="Your email address" required>
+          <label class="news-hp" aria-hidden="true">Leave blank <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          <button class="btn" type="submit">Subscribe</button>
+        </div>
+        <p class="news-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
     <div class="foot-grid">
       <div class="foot-brand">
         <a class="logo" href="index.html">
@@ -364,5 +379,6 @@ function sendEnquiry(){
 }
 </script>
 
+<script src="subscribe.js" defer></script>
 </body>
 </html>
